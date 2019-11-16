@@ -3,7 +3,7 @@ environments:
   - name: acceptance
     provider: ecs-fargate
     loadbalancer:
-      hostedzone: dev.awshenry.com
+      hostedzone: dev.awshenrydemos.com
       name: wordpress-stg
   - name: production
     provider: ecs-fargate
