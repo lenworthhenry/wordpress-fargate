@@ -3,7 +3,7 @@ environments:
   - name: acceptance
     provider: ecs-fargate
     loadbalancer:
-      hostedzone: dev.awshenrydemos.com
+      hostedzone: dev.awshenry.com
       name: wordpress-stg
   - name: production
     provider: ecs-fargate
@@ -149,7 +149,7 @@ service:
   pipeline:
     source:
       provider: GitHub
-      repo: horsfieldsa/wordpress-fargate
+      repo: lenworthhenry/wordpress-fargate
     acceptance:
       disabled: false
       environment: acceptance
@@ -157,11 +157,11 @@ service:
       disabled: true
       environment: production
     notify:
-      - shhorsfi@amazon.com
+      - awshenry@amazon.com
   database:
       name: wordpress
       engine: aurora
-      instanceClass: db.t2.small
+      instanceClass: db.t3.medium
       iamAuthentication: false
       masterUsername: admin
       allocatedStorage: 10
