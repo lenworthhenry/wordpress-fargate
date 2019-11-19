@@ -1,4 +1,6 @@
 #!/bin/bash
+/fluent-bit/bin/fluent-bit -c /fluent-bit/etc/fluent-bit.conf&
+
 set -e
 
 if [ -n "$MYSQL_PORT_3306_TCP" ]; then

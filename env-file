@@ -1,0 +1,11 @@
+_PRIMARY_ELB_LISTENER=arn:aws:elasticloadbalancing:us-east-2:704757034151:listener-rule/app/mu-load-Elb-19K4H0NFQ448T/ef26f7e41dd13c31/847d1bfc41816c38/5127012f7c030f55
+_SERVICE_DISCOVERY_NAME=acceptance.mu.local
+SSM_USER_UPLOAD_KEY_PARAM=wordpress-accesskey
+SSM_USER_UPLOAD_SAK_PARAM=wordpress-secretaccesskey
+USER_UPLOAD_BUCKET=mu-service-wordpress-fargate-acc-useruploadbucket-1vqpx55wb60qm
+USER_UPLOAD_REGION=us-west-2
+WORDPRESS_DB_HOST=mu-database-wordpress-fargate-acceptanc-dbcluster-1nb93i0jho7lz.cluster-c33z7amnem1z.us-east-2.rds.amazonaws.com:3306
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_DB_PASSWORD=xV38kFKsH5SvxW79IdyGuZbo1n84zxV3
+WORDPRESS_DB_USER=admin
+AWS_DEFAULT_REGION=us-east-2
